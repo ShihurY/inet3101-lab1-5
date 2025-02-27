@@ -20,7 +20,7 @@ int main(int argc, char *argv[]) {
     for (int i = 0; i < num_books; i++) {
         printf("\nBook %d\n", i + 1);
         printf("Title: ");
-        scanf("%[^\n]%*c", bookArray[i].bookTitle); // %[^\n]%*c is a format specific to allow spaces in a string 
+        scanf(" %[^\n]%*c", bookArray[i].bookTitle); // %[^\n]%*c is a format specific to allow spaces in a string 
         printf("Book Number: ");
         scanf("%d", &bookArray[i].bookNumber);
         printf("Number of Pages: ");
